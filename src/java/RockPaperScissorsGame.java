@@ -14,6 +14,9 @@ public class RockPaperScissorsGame {
     public void setComputerChoice(){
         computerChoice = Choice.values()[new Random().nextInt(3)];
     }
+    public void setComputerChoice(Choice choice){
+        computerChoice = choice;
+    }
 
     public void playGame(){
         if(playerChoice.equals(computerChoice)){
